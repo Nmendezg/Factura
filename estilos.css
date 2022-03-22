@@ -1,0 +1,13 @@
+#padreFac{
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+}
+.hijoFac{
+    border: 1px solid;
+    width: 100%;
+}
+#divTotal1{
+    text-align: end;
+    
+}

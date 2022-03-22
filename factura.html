@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+
+<body>
+    <table>
+
+        <tr>
+            <td>Nombre</td>
+            <td><input type="text" id="nombre"></td>
+        </tr>
+        <tr>
+            <td>Apellido</td>
+            <td><input type="text" id="apellido"></td>
+        </tr>
+        <tr>
+            <td>E-Mail</td>
+            <td><input type="email" id="email"></td>
+        </tr>
+        <tr>
+            <td>Telefono</td>
+            <td><input type="number" id="telefono"></td>
+        </tr>
+        <tr>
+            <td>Fecha</td>
+            <td><input type="date" id="fecha"></td>
+        </tr>
+        <tr>
+            <td><button id="guardar">Guardar</button></td>
+        </tr>
+
+    </table>
+    <hr>
+    <table>
+
+        <tr>
+            <td>Producto</td>
+            <td><input type="text" id="producto"></td>
+        </tr>
+        <tr>
+            <td>Cantidad</td>
+            <td><input type="number" id="cantidad"></td>
+        </tr>
+        <tr>
+            <td>Precio</td>
+            <td><input type="number" id="precio"></td>
+        </tr>
+        <tr>
+            <td><button id="compra">Guardar Compra</button></td>
+        </tr>
+
+    </table>
+    <hr>
+    <hr>
+    <table>
+        <tr>
+            <td>
+                <h3>Factura</h3>
+            </td>
+
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>Nombre: </td>
+            <td><label id="nomFac"></label></td>
+        </tr>
+        <tr>
+            <td>Apellido: </td>
+            <td><label id="apeFac"></label></td>
+        </tr>
+        <tr>
+            <td>Email: </td>
+            <td><label id="emaFac"></label></td>
+        </tr>
+        <tr>
+            <td>Telefono: </td>
+            <td><label id="telFac"></label></td>
+        </tr>
+        <tr>
+            <td>Fecha: </td>
+            <td><label id="fecFac"></label></td>
+        </tr>
+
+    </table>
+
+    <div id="padreFac">
+        <div id="divProducto" class="hijoFac">
+            <h4>Productos: </h4>
+            <hr>
+            <p id="listaProductos"> </p>
+        </div>
+        <div id="divCantidad" class="hijoFac">
+            <h4>Cantidades: </h4>
+            <hr>
+            <p id="listaCantidades"></p>
+        </div>
+        <div id="divUnitario" class="hijoFac">
+            <h4>Precio Unitario: </h4>
+            <hr>
+            <p id="listaUnitarios"></p>
+        </div>
+        <div id="divTotal" class="hijoFac">
+            <h4>Precio Total: </h4>
+            <hr>
+            <p id="listaTotales"></p>
+        </div>
+
+    </div>
+    <div id="divTotal1">
+        <label><strong> Total: </strong></label>
+        <label id="labelTotal"></label>
+    </div>
+
+
+    <script src="./scriptFactura.js"></script>
+</body>
+
+</html>
